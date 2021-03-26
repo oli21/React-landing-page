@@ -1,0 +1,83 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index:-1;
+}
+
+.heroContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroContainer h1 {
+  color: white;
+  font-size: 100px;
+  margin-top: 8rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroContainer p {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.heroContainer-btn .btn {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.heroContainer-btn .btn:hover {
+  background: white;
+  color: black;
+}
+
+.heroContainer-btn .btn.active {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .heroContainer h1 {
+    margin-top: 10rem;
+    font-size: 70px;
+  }
+
+  .heroContainer p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroContainer h1 {
+    margin-top: 10rem;
+    font-size: 40px;
+  }
+
+  .heroContainer p {
+    font-size: 20px;
+  }
+
+  .heroContainer-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroContainer-btn .btn {
+    font-size: 1.25rem;
+  }
+
+  .heroContainer-btn .btn:last-child {
+    margin-top: 1rem;
+  }
+}
