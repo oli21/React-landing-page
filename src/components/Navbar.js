@@ -1,14 +1,10 @@
-import React,{useState} from "react";
-import './Navbar.css'
+import React, { useState } from "react";
+import "./Navbar.css";
 function Navbar() {
-  const [showMenu,setShowMenu] = useState(true);
-  const handleShowMenu = () =>{
+  const [showMenu, setShowMenu] = useState(true);
+  const handleShowMenu = () => {
     setShowMenu(!showMenu);
-  }
-
-  
-
-  
+  };
 
   return (
     <>
